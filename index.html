@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Intro Component Sign-up</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon-32x32.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="image/bg-intro-mobile.png">
+    <link rel="stylesheet" href="image/bg-intro-desktop.png">
+    <link rel="stylesheet" href="image/icon-error.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="left-text">
+            <h1>Learn to code by<br> watching others</h1>
+            <p>See how experienced developers solve<br class="br2"> problems in real-time.<br class="br1"> Watching<br class="br2"> scripted tutorials is great, but<br class="br2"> understanding how<br class="br1"> developers think is<br class="br2"> invaluable.</p>
+        </div>
+        <div class="right-form">
+            <div id="price">
+                <p><span>Try it free 7 days</span> then<br class="br2"> $20/mo. thereafter</p>
+            </div>
+            <form id="form">
+                <input type="text" name="First Name" placeholder="First Name" id="first-name">
+                    <p class="error-message" id="erreur"></p>
+                <input type="text" name="Last Name" placeholder="Last Name" id="last-name">
+                    <p class="error-message" id="erreur2"></p>
+                <input type="email" name="email" placeholder="Email Address" id="email">
+                    <p class="error-message" id="erreur3"></p>
+                <input type="password" name="password" placeholder="Password" id="password">
+                    <p class="error-message" id="erreur4"></p>
+                <input id="button" type="submit" value="Claim your free trial">
+                <p id="terms">By clicking the button, you are agreeing to<br class="br2"> our <span>Terms and Services</span></p>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+:root{
+--Red: hsl(0, 100%, 74%); 
+--Green: hsl(154, 59%, 51%);
+
+--Blue: hsl(248, 32%, 49%);
+
+--Dark-Blue: hsl(249, 10%, 26%) ;
+--Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+*{
+    margin: 0cm;
+    padding: 0cm;
+    font-family: Poppins;
+}
+body{
+    background: url(image/bg-intro-desktop.png);
+    background-color: var(--Red);
+}
+.container{
+    display: flex;
+    flex-direction: row; 
+    min-height: 100vh;
+    align-items: center;
+}
+.left-text{
+    margin-left: 8cm;
+}
+.left-text h1{
+    color: #fff;
+    font-size: 1.5cm;
+    line-height: 1.7cm;
+}
+.left-text p{
+    color: #fff;
+    font-size: 0.49cm;
+    margin-top: 0.8cm;
+    font-weight: 400;
+}
+.right-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5cm;
+}
+#price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2cm;
+    width: 17cm;
+    border-radius: 0.3cm;
+    background-color: var(--Blue);
+    box-shadow: rgba(0, 0, 0, 0.185) 0px 8px 0px;
+}
+#price p{
+    color: #fff;
+    font-size: 0.5cm;
+}
+#price span{
+    font-weight: 600;
+}
+#form{
+    background-color: #fff;
+    margin-top: 0.7cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.3cm;
+    width: 17cm;
+    height: 14cm;
+    box-shadow: rgba(0, 0, 0, 0.185) 0px 8px 0px;
+}
+#form.active{
+    height: 16cm;
+}
+#first-name{
+    width: 14cm;
+    height: 1.5cm;
+    border-radius: 0.2cm;
+    border: 0.05cm solid rgb(214, 212, 212);
+    color: var(--Dark-Blue);
+    font-size: 0.4cm;
+    font-weight: 600;
+    padding-left: 0.8cm;
+    margin-top: 1cm;
+}
+#first-name.active{
+    background-image: url(image/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 13.8cm;
+}
+#first-name:focus{
+    outline: none;
+    border: 1px solid var(--Dark-Blue);
+}
+#last-name{
+    width: 14cm;
+    height: 1.5cm;
+    border-radius: 0.2cm;
+    border: 0.05cm solid rgb(214, 212, 212);
+    color: var(--Dark-Blue);
+    font-size: 0.4cm;
+    font-weight: 600;
+    padding-left: 0.8cm;
+    margin-top: 0.8cm;
+}
+#last-name.active{
+    background-image: url(image/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 13.8cm;
+}
+#last-name:focus{
+    outline: none;
+    border: 1px solid var(--Dark-Blue);
+}
+#email{
+    width: 14cm;
+    height: 1.5cm;
+    border-radius: 0.2cm;
+    border: 0.05cm solid rgb(214, 212, 212);
+    color: var(--Dark-Blue);
+    font-size: 0.4cm;
+    font-weight: 600;
+    padding-left: 0.8cm;
+    margin-top: 0.8cm;
+}
+#email.active{
+    background-image: url(image/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 13.8cm;
+}
+#email:focus{
+    outline: none;
+    border: 1px solid var(--Dark-Blue);
+}
+#password{
+    width: 14cm;
+    height: 1.5cm;
+    border-radius: 0.2cm;
+    border: 0.05cm solid rgb(214, 212, 212);
+    color: var(--Dark-Blue);
+    font-size: 0.4cm;
+    font-weight: 600;
+    padding-left: 0.8cm;
+    margin-top: 0.8cm;
+}
+#password.active{
+    background-image: url(image/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 13.8cm;
+}
+#password:focus{
+    outline: none;
+    border: 1px solid var(--Dark-Blue);
+}
+#button{
+    margin-top: 0.7cm;
+    width: 14.9cm;
+    height: 1.5cm;
+    border-radius: 0.2cm;
+    border-style: none;
+    background-color: var(--Green);
+    color: #fff;
+    font-size: 0.5cm;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 3px solid hsl(154, 59%, 45%) ;
+}
+#button:hover{
+    cursor: pointer;
+}
+#terms{
+    margin-top: 0.4cm;
+    font-size: 0.35cm;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+#terms span{
+    color: var(--Red);
+    font-weight: 600;
+}
+#terms:hover{
+    cursor: pointer;
+}
+.error-message{
+    display: flex;
+    align-self: flex-end;
+    margin-top: 0.1cm;
+    margin-right: 1.2cm;
+    color: var(--Red);
+    font-size: 0.35cm;
+    font-style: italic;
+}
+.br2{
+    display: none;
+}
+
+@media screen and (max-width: 625px) {
+    body{
+        background: url(image/bg-intro-mobile.png);
+        background-color: var(--Red);
+    }
+    .container{
+        flex-direction: column; 
+    }
+    .br1{
+        display: none;
+    }
+    .br2{
+        display: flex;
+    }
+    .left-text{
+        margin-left: 0cm;
+        text-align: center;
+    }
+    .left-text h1{
+        margin-top: 1cm;
+        font-size: 0.7cm;
+        line-height: 1cm;
+    }
+    .left-text p{
+        font-size: 0.4cm;
+        margin-top: 0.3cm;
+    }
+    .right-form{
+        margin-left: 0cm;
+    }
+    #price{
+        margin-top: 1cm;
+        text-align: center;
+        height: 2cm;
+        width: 10cm;
+    }
+    #price p{
+        font-size: 0.4cm;
+    }
+    #form{
+        background-color: #fff;
+        margin-top: 0.7cm;
+        display: flex;
+        text-align: center;
+        width: 10cm;
+        height: 12cm;
+    }
+    #form.active{
+        height: 13.5cm;
+    }
+    #first-name{
+        width: 8cm;
+        height: 1.3cm;
+        border-radius: 0.2cm;
+        border: 0.05cm solid rgb(214, 212, 212);
+        color: var(--Dark-Blue);
+        font-size: 0.4cm;
+        font-weight: 600;
+        padding-left: 0.8cm;
+        margin-top: 0.5cm;
+    }
+    #first-name.active{
+        background-position: 8cm;
+    }
+    #last-name{
+        width: 8cm;
+        height: 1.3cm;
+        border-radius: 0.2cm;
+        border: 0.05cm solid rgb(214, 212, 212);
+        color: var(--Dark-Blue);
+        font-size: 0.4cm;
+        font-weight: 600;
+        padding-left: 0.8cm;
+        margin-top: 0.5cm;
+    }
+    #last-name.active{
+        background-position: 8cm;
+    }
+    #email{
+        width: 8cm;
+        height: 1.3cm;
+        border-radius: 0.2cm;
+        border: 0.05cm solid rgb(214, 212, 212);
+        color: var(--Dark-Blue);
+        font-size: 0.4cm;
+        font-weight: 600;
+        padding-left: 0.8cm;
+        margin-top: 0.5cm;
+    }
+    #email.active{
+        background-position: 8cm;
+    }
+    #password{
+        width: 8cm;
+        height: 1.3cm;
+        border-radius: 0.2cm;
+        border: 0.05cm solid rgb(214, 212, 212);
+        color: var(--Dark-Blue);
+        font-size: 0.4cm;
+        font-weight: 600;
+        padding-left: 0.8cm;
+        margin-top: 0.5cm;
+    }
+    #password.active{
+        background-position: 8cm;
+    }
+    #button{
+        margin-top: 0.4cm;
+        width: 8.9cm;
+        height: 1.3cm;
+        border-radius: 0.2cm;
+        border-bottom: 3px solid hsl(154, 59%, 45%) ;
+    }
+    #terms{
+        margin-top: 0.4cm;
+        font-size: 0.35cm;
+        color: var(--Grayish-Blue);
+        font-weight: 400;
+    }
+    .error-message{
+        display: flex;
+        align-self: flex-end;
+        margin-top: 0.1cm;
+        margin-right: 0.7cm;
+        color: var(--Red);
+        font-size: 0.35cm;
+        font-style: italic;
+    }
+}
+
